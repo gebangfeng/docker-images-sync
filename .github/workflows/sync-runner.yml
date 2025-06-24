@@ -16,4 +16,4 @@ jobs:
           wget https://github.com/OpenCIDN/OpenCIDN/releases/download/v0.0.18/runner_linux_amd64 -O /usr/local/bin/runner && chmod +x /usr/local/bin/runner
       - name: Sync Runner
         run: |
-          /usr/local/bin/runner --storage-url s3://bbb0adcd0aad4e31ca3f98e92f2d3a98:1bd840b1178eaa6e80ef4e79fdb54e4b8db5ccb31b3a56f4f0957ba9dc5fc315@dockerimage.wnam?regionendpoint=https://520cdb2994465a3fe2a2edf91bf1db50.r2.cloudflarestorage.com&chunksize=1073741824&signendpoint=https://pub-7efc8406a59448eda787d7450b2b2f36.r2.dev --queue-token QUEUE_TOKEN --queue-url http://imagetest.gbfeng.com:8082/apis/v1 --duration 3h --retry=3 --retry-interval=2s
+          /usr/local/bin/runner 
